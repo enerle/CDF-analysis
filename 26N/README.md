@@ -3,9 +3,8 @@
 1. Meridional Flow is calculated at latitude 26N using CDF tools 
 2. Flow is divided into the Western Boundary Current (WBD) and the Interior (Int) ocean contribution
 4. Flow is further vertically divided in upper and lower layers using 1000-m depth as cropping level
-5. Data comes from HR-EC-earth model
 
-## Simulations
+## HR-EC-earth Model Simulations
 
 Hspu: 350-yr Pre-Industrial (PrI) for 1850
 

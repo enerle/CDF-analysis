@@ -16,6 +16,8 @@ Below, we present the detailed workflow for estimating ocean mass transports usi
     Cdio: 1% per year increasing of CO2 experiment (1pctCO2): starts from year ~250 of PrI
     Cfix: Fixed CO2 at 551.5 ppm starting from year 1917 of 1% CO2 run
     Cfx2: Fixed CO2 at 400.9 starting from year 1885 of 1% CO2 run
+
+%include figure here...
     
 **Details**
 

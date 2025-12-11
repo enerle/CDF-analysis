@@ -2,15 +2,11 @@
 
 ## Summary
 
-We computed volume transports across sections using the cdftransport operator from CDFTOOLS, a diagnostic package written in Fortran 90 for analyzing NEMO model outputs (github.com/meom-group/CDFTOOLS).  CDFTOOLS was developed within the DRAKKAR framework to facilitate diagnostics of NEMO simulations. Total volume transport is calculated by separating and summing the positive (inflow) and negative (outflow) contributions. Depth limits were specified to define the layers over which the transports were computed. No heat or salt transport diagnostics were requested. The transport computation was performed over the time index.
+We computed volume transports across sections using the cdftransport operator from CDFTOOLS, a diagnostic package written in Fortran 90 for analyzing NEMO model outputs (github.com/meom-group/CDFTOOLS). CDFTOOLS was developed within the DRAKKAR framework to facilitate diagnostics of NEMO simulations. Total volume transport is calculated by separating and summing the positive (inflow) and negative (outflow) contributions. Depth limits were specified to define the layers over which the transports were computed. No heat or salt transport diagnostics were requested. The transport computation was performed over the time index.
 
-Next, here we show the detailed workflow for ocean mass transports estimation using EC-Earth HR Simulations and CDF tools 
+Below, we present the detailed workflow for estimating ocean mass transports using EC-Earth HR simulations and CDFTOOLS.
 
 ## EC-Earth HR Simulations 
-
-**Main directory**
-
-    /nobackup/rossby26/proj/rossby/joint_exp/ligarctic/EC-Earth3-HR_runs
 
 **Simulations**
 
@@ -23,14 +19,11 @@ Next, here we show the detailed workflow for ocean mass transports estimation us
     
 **Details**
 
-The two fixed CO2 concentrations experiments (400.9 ppm and 551.5 ppm) were initialized from points corresponding to global temperature anomalies of around 1°C and 2°C in the 1pctCO2 experiment. In the fixed CO2 experiment at 400.9 ppm, Arctic warming reached approximately 3.7°C, similar to conditions during the Last Interglacial period. In the fixed CO2 experiment at 551.5 ppm, the global mean temperature increased by around 2°C. Both fixed CO2 experiments showed a rapid reduction of summer sea ice, with sea ice disappearing by the end of the simulation under the 551.5 ppm CO2 concentration. Both simulations equilibrated at a higher global warming level.
+The two fixed-CO₂ concentration experiments (400.9 ppm and 551.5 ppm) were initialized from points in the 1pctCO2 experiment corresponding to global temperature anomalies of approximately 1 °C and 2 °C, respectively. In the fixed-CO₂ experiment at 400.9 ppm, Arctic warming reached about 3.7 °C, comparable to conditions during the Last Interglacial period. In the experiment with a fixed concentration of 551.5 ppm, the global mean temperature increased by roughly 2 °C. Both fixed-CO₂ experiments exhibited a rapid reduction in summer sea ice, with complete loss of summer sea ice occurring by the end of the simulation under the 551.5 ppm scenario. In both cases, the climate system equilibrated at a higher level of global warming.
 
 ## Procedure (example)
 
-Compiled cdftool codes can be found here:
-    /nobackup/rossby26/proj/rossby/joint_exp/ligarctic/cdftools/CDFTOOLS
-
-To compute volume flux through a given section
+To compute volume flux through a given section for a given year:
 
     ../bin/cdftransport -u Hist_1m_18510101_18511231_opa_grid_U_3D.nc -v Hist_1m_18510101_18511231_opa_grid_V_3D.nc -noheat <section.dat
 
@@ -41,14 +34,12 @@ To compute volume flux through a given section
     mesh_zgr.nc: contains vertical coordinate information (mbathy, e3t_ps, e3w_ps, gdpet_0, gdeptw_0, e3t_0, e3t_w, ...)
     gridU-file:
     gridV-file:
-    section.dat: contains coordinates for ...
-
-The source codes and compiled files are under "src" and "bin" folders.
+    section.dat: contains a list of section coordinates [imin, imax, jmin, jmax] for the computation of the volume transports
 
 For help, check
 
     https://meom-group.github.io/doc/CDFTOOLS/#cdftransport
-
+    https://github.com/meom-group/CDFTOOLS
 
 ## Miscellaneous
 

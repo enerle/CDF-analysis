@@ -18,8 +18,8 @@ Additional shell scripts and exact command options (including any non-default fl
     Cfix: Fixed CO2 at 551.5 ppm starting from year 1917 of 1% CO2 run
     Cfx2: Fixed CO2 at 400.9 starting from year 1885 of 1% CO2 run
 
-%include figure here...
-    
+![Test Image 3](/co2_conc_timeseries.png)
+
 **Details**
 
 The two fixed-CO₂ concentration experiments (400.9 ppm and 551.5 ppm) were initialized from points in the 1pctCO2 experiment corresponding to global temperature anomalies of approximately 1 °C and 2 °C, respectively. In the fixed-CO₂ experiment at 400.9 ppm, Arctic warming reached about 3.7 °C, comparable to conditions during the Last Interglacial period. In the experiment with a fixed concentration of 551.5 ppm, the global mean temperature increased by roughly 2 °C. Both fixed-CO₂ experiments exhibited a rapid reduction in summer sea ice, with complete loss of summer sea ice occurring by the end of the simulation under the 551.5 ppm scenario. In both cases, the climate system equilibrated at a higher level of global warming.

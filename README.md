@@ -4,7 +4,8 @@
 
 We computed volume transports across sections using the cdftransport operator from CDFTOOLS, a diagnostic package written in Fortran 90 for analyzing NEMO model outputs (github.com/meom-group/CDFTOOLS). CDFTOOLS was developed within the DRAKKAR framework to facilitate diagnostics of NEMO simulations. Total volume transport is calculated by separating and summing the positive (inflow) and negative (outflow) contributions. Depth limits were specified to define the layers over which the transports were computed. No heat or salt transport diagnostics were requested. The transport computation was performed over the time index.
 
-Below, we present the detailed workflow for estimating ocean mass transports using EC-Earth HR simulations and CDFTOOLS.
+All CDFTOOLS calls for the DWF analysis are provided in the attached repository. In particular, the cdftransport operator was run with the following command for each section and time slice:
+Additional shell scripts and exact command options (including any non-default flags) are provided using EC-Earth HR simulations. This includes loops over time indices and post-processing steps for computing mean diagnostics.
 
 ## EC-Earth HR Simulations 
 

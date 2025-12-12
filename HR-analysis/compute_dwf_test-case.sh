@@ -1,5 +1,6 @@
 #!/bin/sh
-#
+# test-case
+
 module load CDO/2.3.0-eccodes-aec-cmor-hpc1-intel-2023a-eb
 module load netCDF-HDF5-utils/4.9.2-1.12.2-hpc1-intel-2023a-eb
 

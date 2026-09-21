@@ -1,3 +1,6 @@
-Here all the codes used for calculating volume transport across sections in Karami et al., 2026 (https://esd.copernicus.org/articles/17/1151/2026/) and Navarro-Labastida et al., in prep
-The provided codes if want to be used have to be modify for the HPC architecture you are about to use. This codes works were tested for the HPC FREJA-NSC Linkoping University, Sweden.
+All the codes used for calculating volume transports in
+Karami et al., 2026 (https://esd.copernicus.org/articles/17/1151/2026/) and Navarro-Labastida et al., (in prep).
+You could find section definitions in sections_HR.dat, and other examples in Sections/
+The provided codes if want to be used have to be modify for the HPC architecture you are about to use. 
+This codes works were tested for the HPC FREJA-NSC Linkoping University, Sweden.
 

@@ -1,7 +1,0 @@
-i think you only need the section between LAB and IRM
-These are the coordinates:
-ATL_LAB_East
-lon,lat = (316,45),(314,61.7)
-
-
-
